@@ -55,6 +55,7 @@ ERROR in   Error: Child compilation failed:
 {
   test: /\.(jsx)|(js)?$/,//test: /\.(jsx)|(js)?$/,这里的正则不能加?号，否则会报错
                          //?表示匹配前面的子表达式零次或一次，或指明一个非贪婪限定符
+                         //该正则表达式可以匹配到.html文件，所以报错
   exclude: /node_modules/,
   use: 'babel-loader'
 },
